@@ -19,3 +19,19 @@ Include the shadow mixin where you want to use it:
     @include box-shadow(0, 0, .5rem, 3, rgb(0, 0, 0));
 }
 ```
+
+# Syntax
+
+```
+box-shadow(offset-x, offset-y, blur-radius, blur-count, color);
+```
+
+where
+
+```
+<offset-x> = <length>
+<offset-y> = <length>
+<blur-radius> = <length>
+<blur-count> = <number>
+<color> = <color>
+```
