@@ -1,0 +1,23 @@
+@mixin text-shadow($x, $y, $size, $spread, $color)
+{
+    $rule: ();
+
+    @for $i from 1 to $spread
+    {
+        $rule: append($rule, $x $y $size $color, comma);
+    }
+
+    text-shadow: $rule;
+}
+
+@mixin box-shadow($x, $y, $size, $spread, $color)
+{
+    $rule: ();
+
+    @for $i from 1 to $spread
+    {
+        $rule: append($rule, $x $y $size $color, comma);
+    }
+
+    box-shadow: $rule;
+}
